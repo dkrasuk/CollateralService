@@ -1,0 +1,162 @@
+{
+  "Id": 0,
+  "Name": "MasterSystems",
+  "Version": "1",
+  "Metadata": null,
+  "Items": [
+    {
+      "Value": {
+        "Id": "1",
+        "Name": "B2"
+      },
+      "ValueId": "1"
+    },
+	{
+      "Value": {
+        "Id": "2",
+        "Name": "IS-Card Физлица"
+      },
+      "ValueId": "2"
+    },
+	{
+      "Value": {
+        "Id": "3",
+        "Name": "IS-Card Юрлица"
+      },
+      "ValueId": "3"
+    },
+	{
+      "Value": {
+        "Id": "4",
+        "Name": "LWB"
+      },
+      "ValueId": "4"
+    },
+	{
+      "Value": {
+        "Id": "5",
+        "Name": "Operators"
+      },
+      "ValueId": "5"
+    },
+	{
+      "Value": {
+        "Id": "6",
+        "Name": "CollectSM 4.2"
+      },
+      "ValueId": "6"
+    },
+	{
+      "Value": {
+        "Id": "7",
+        "Name": "SMERSH 20110713"
+      },
+      "ValueId": "7"
+    },
+	{
+      "Value": {
+        "Id": "8",
+        "Name": "SLOLP"
+      },
+      "ValueId": "8"
+    },
+	{
+      "Value": {
+        "Id": "9",
+        "Name": "Insurance CAR"
+      },
+      "ValueId": "9"
+    },
+	{
+      "Value": {
+        "Id": "10",
+        "Name": "AC for Insurance ML, SME"
+      },
+      "ValueId": "10"
+    },
+	{
+      "Value": {
+        "Id": "11",
+        "Name": "Lease"
+      },
+      "ValueId": "11"
+    },
+	{
+      "Value": {
+        "Id": "12",
+        "Name": "Evolan ProstoFin"
+      },
+      "ValueId": "12"
+    },
+	{
+      "Value": {
+        "Id": "13",
+        "Name": "Scrooge PFB"
+      },
+      "ValueId": "13"
+    },
+	{
+      "Value": {
+        "Id": "14",
+        "Name": "SWED"
+      },
+      "ValueId": "14"
+    },
+	{
+      "Value": {
+        "Id": "15",
+        "Name": "Siebel"
+      },
+      "ValueId": "15"
+    },
+	{
+      "Value": {
+        "Id": "16",
+        "Name": "Social_Network"
+      },
+      "ValueId": "16"
+    },
+	{
+      "Value": {
+        "Id": "17",
+        "Name": "BKI"
+      },
+      "ValueId": "17"
+    },
+	{
+      "Value": {
+        "Id": "18",
+        "Name": "USB"
+      },
+      "ValueId": "18"
+    },
+	{
+      "Value": {
+        "Id": "19",
+        "Name": "Client"
+      },
+      "ValueId": "19"
+    },
+	{
+      "Value": {
+        "Id": "20",
+        "Name": "CSense"
+      },
+      "ValueId": "20"
+    },
+	{
+      "Value": {
+        "Id": "21",
+        "Name": "UkrSoc"
+      },
+      "ValueId": "21"
+    },
+	{
+      "Value": {
+        "Id": "22",
+        "Name": "Staging"
+      },
+      "ValueId": "22"
+    }
+  ]
+}

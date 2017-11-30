@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Web.Models.Collateral>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Type.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Subtype.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Value)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Value.Currency)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EvaluationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsMoratorium)
+        </th>       
+        <th>
+            @Html.DisplayNameFor(model => model.IsSale)
+        </th>        
+        <th>
+            @Html.DisplayNameFor(model => model.IsVerified)
+        </th>        
+    </tr>
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subtype.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Value.Value)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Value.Currency)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EvaluationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsActive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsMoratorium)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsSale)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsVerified)
+        </td>
+    </tr>
+}
+
+</table>

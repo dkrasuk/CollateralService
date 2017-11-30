@@ -1,0 +1,41 @@
+{
+    "Id": 0,
+    "Name": "CurrencyType",
+    "Version": "1",
+    "Metadata": null,
+    "Items": [
+      {
+        "Value": {
+          "Id": "1",
+          "Name": "UAH",
+          "Code": "980"
+        },       
+        "ValueId": "1"
+      },
+      {
+        "Value": {
+          "Id": "2",
+          "Name": "USD",
+          "Code": "840"
+        },       
+        "ValueId": "2"
+      },
+      {
+        "Value": {
+          "Id": "3",
+          "Name": "EUR",
+          "Code": "978"
+        },       
+        "ValueId": "3"
+      },
+      {
+        "Value": {
+          "Id": "4",
+          "Name": "CHF",
+          "Code": "756"
+        },       
+        "ValueId": "4"
+      }
+    ]
+  }
+

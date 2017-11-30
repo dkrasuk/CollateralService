@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3AC5893B-C717-4F1D-BB23-76D9C96576E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CollateralService.ApiClient.Client</RootNamespace>
+    <AssemblyName>CollateralServiceApiClient</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Rest.ClientRuntime.2.3.8\lib\net452\Microsoft.Rest.ClientRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bootstraper.cs" />
+    <Compile Include="Collateral.cs" />
+    <Compile Include="CollateralAgreements.cs" />
+    <Compile Include="CollateralAgreementsExtensions.cs" />
+    <Compile Include="CollateralExtensions.cs" />
+    <Compile Include="CreditAgreement.cs" />
+    <Compile Include="CreditAgreementExtensions.cs" />
+    <Compile Include="Interfaces\ICollateral.cs" />
+    <Compile Include="Interfaces\ICollateralAgreements.cs" />
+    <Compile Include="Interfaces\ICollateralServiceWebAPI.cs" />
+    <Compile Include="Interfaces\ICreditAgreement.cs" />
+    <Compile Include="Models\Presentation\Requests\Car\BodyType.cs" />
+    <Compile Include="Models\Presentation\Requests\Car\Brand.cs" />
+    <Compile Include="Models\Presentation\Requests\Car\Color.cs" />
+    <Compile Include="Models\Presentation\Requests\Car\GearBox.cs" />
+    <Compile Include="Models\Presentation\Requests\Car\Model.cs" />
+    <Compile Include="Models\Presentation\Requests\Car\Region.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\Collateral.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\Location.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\MasterSystem.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\Moratorium.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\State.cs" />
+    <Compile Include="Models\Presentation\Requests\Mortgage\Appointment.cs" />
+    <Compile Include="Models\Presentation\Requests\Mortgage\District.cs" />
+    <Compile Include="Models\Presentation\Requests\Mortgage\Region.cs" />
+    <Compile Include="Models\Presentation\Requests\Mortgage\Settlement.cs" />
+    <Compile Include="Models\Presentation\Requests\Mortgage\SettlementType.cs" />
+    <Compile Include="Models\Presentation\Requests\Mortgage\StreetType.cs" />
+    <Compile Include="Models\Presentation\Requests\Car\Car.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\Amount.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\Currency.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\Evaluation.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\EvalutionType.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\SaleType.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\Source.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\Status.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\Subtype.cs" />
+    <Compile Include="Models\Presentation\Requests\Collateral\Type.cs" />
+    <Compile Include="Models\Presentation\Requests\Mortgage\Mortgage.cs" />
+    <Compile Include="Models\Presentation\Requests\OtherCollateral\OtherCollateral.cs" />
+    <Compile Include="Models\Presentation\Responses\Car\BodyType.cs" />
+    <Compile Include="Models\Presentation\Responses\Car\Brand.cs" />
+    <Compile Include="Models\Presentation\Responses\Car\Car.cs" />
+    <Compile Include="Models\Presentation\Responses\Car\Color.cs" />
+    <Compile Include="Models\Presentation\Responses\Car\GearBox.cs" />
+    <Compile Include="Models\Presentation\Responses\Car\Model.cs" />
+    <Compile Include="Models\Presentation\Responses\Car\Region.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\Amount.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\Collateral.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\CollateralAgreement.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\Currency.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\Evaluation.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\EvalutionType.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\Location.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\MasterSystem.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\Moratorium.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\SaleType.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\Source.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\State.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\Status.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\Subtype.cs" />
+    <Compile Include="Models\Presentation\Responses\Collateral\Type.cs" />
+    <Compile Include="Models\Presentation\Responses\Mortgage\Appointment.cs" />
+    <Compile Include="Models\Presentation\Responses\Mortgage\District.cs" />
+    <Compile Include="Models\Presentation\Responses\Mortgage\Mortgage.cs" />
+    <Compile Include="Models\Presentation\Responses\Mortgage\Region.cs" />
+    <Compile Include="Models\Presentation\Responses\Mortgage\Settlement.cs" />
+    <Compile Include="Models\Presentation\Responses\Mortgage\SettlementType.cs" />
+    <Compile Include="Models\Presentation\Responses\Mortgage\StreetType.cs" />
+    <Compile Include="CollateralServiceWebAPI.cs" />
+    <Compile Include="Models\Presentation\Responses\OtherCollateral\OtherCollateral.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

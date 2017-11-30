@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5DB0F172-6C9B-4D36-819B-4A113A03243A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlfaBank.AlfaCollection.Services.PersonService.Entities</RootNamespace>
+    <AssemblyName>Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.1.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit, Version=1.1.9.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <HintPath>..\packages\LinqKit.1.1.9.0\lib\net45\LinqKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.2.1100\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.12.2.1100\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201707130812044_initial.cs" />
+    <Compile Include="Migrations\201707130812044_initial.Designer.cs">
+      <DependentUpon>201707130812044_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707280917251_CreateViewsCollateral.cs" />
+    <Compile Include="Migrations\201707280917251_CreateViewsCollateral.Designer.cs">
+      <DependentUpon>201707280917251_CreateViewsCollateral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708010759137_CollateralAgreementsNewProperties.cs" />
+    <Compile Include="Migrations\201708010759137_CollateralAgreementsNewProperties.Designer.cs">
+      <DependentUpon>201708010759137_CollateralAgreementsNewProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708030735376_CreateViewCollateralFix.cs" />
+    <Compile Include="Migrations\201708030735376_CreateViewCollateralFix.Designer.cs">
+      <DependentUpon>201708030735376_CreateViewCollateralFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708210922573_FixCollateralV_District.cs" />
+    <Compile Include="Migrations\201708210922573_FixCollateralV_District.Designer.cs">
+      <DependentUpon>201708210922573_FixCollateralV_District.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708310915476_ModifyViewEvaluationValueCurrency.cs" />
+    <Compile Include="Migrations\201708310915476_ModifyViewEvaluationValueCurrency.Designer.cs">
+      <DependentUpon>201708310915476_ModifyViewEvaluationValueCurrency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709060659429_MigrateForLocation.cs" />
+    <Compile Include="Migrations\201709060659429_MigrateForLocation.Designer.cs">
+      <DependentUpon>201709060659429_MigrateForLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Context.cs" />
+    <Compile Include="Models\Collateral.cs" />
+    <Compile Include="Models\CollateralAgreement.cs" />
+    <Compile Include="Models\Configuration\CollateralAgreementConfiguration.cs" />
+    <Compile Include="Models\Configuration\CollateralConfiguration.cs" />
+    <Compile Include="Models\Configuration\CreditAgreementConfiguration.cs" />
+    <Compile Include="Models\CreditAgreement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Repository.Pattern.Ef6\Repository.Pattern.Ef6.csproj">
+      <Project>{f68a1d19-93fb-47c1-a22b-42bea3e4fd8c}</Project>
+      <Name>Repository.Pattern.Ef6</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201707130812044_initial.resx">
+      <DependentUpon>201707130812044_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707280917251_CreateViewsCollateral.resx">
+      <DependentUpon>201707280917251_CreateViewsCollateral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708010759137_CollateralAgreementsNewProperties.resx">
+      <DependentUpon>201708010759137_CollateralAgreementsNewProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708030735376_CreateViewCollateralFix.resx">
+      <DependentUpon>201708030735376_CreateViewCollateralFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708210922573_FixCollateralV_District.resx">
+      <DependentUpon>201708210922573_FixCollateralV_District.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708310915476_ModifyViewEvaluationValueCurrency.resx">
+      <DependentUpon>201708310915476_ModifyViewEvaluationValueCurrency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709060659429_MigrateForLocation.resx">
+      <DependentUpon>201709060659429_MigrateForLocation.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entities.csproj.vspscc" />
+    <Content Include="Script\v_CollateralHistory.sql" />
+    <Content Include="Script\v_Collaterals.sql" />
+    <Content Include="Script\v_CollateralsEvaluations.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
